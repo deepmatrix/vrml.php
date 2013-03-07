@@ -1,5 +1,5 @@
 <?php
-Wind::import('WIND:base.WindError');
+Wind::import('WIND:base.WindErrorHandler');
 /**
  * web mvc 错误句柄处理
  * errorDir错误页面所在目录，在web模式下默认的错误目录为‘WIND:web.view’，{@see
@@ -11,7 +11,7 @@ Wind::import('WIND:base.WindError');
  * @version $Id$
  * @package wind.web
  */
-class WindWebError extends WindError {
+class WindWebErrorHandler extends WindErrorHandler {
 	
 	/*
 	 * (non-PHPdoc) @see WindError::showErrorMessage()

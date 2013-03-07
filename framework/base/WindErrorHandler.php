@@ -8,7 +8,7 @@
  * @version $Id$
  * @package wind.base
  */
-class WindError extends WindModule {
+class WindErrorHandler extends WindModule {
 	protected $errorDir;
 	protected $isClosed;
 

@@ -15,7 +15,7 @@
  * @version $Id: WindErrorHandler.php 3861 2012-12-18 11:13:05Z yishuo $
  * @package web
  */
-class WindErrorHandler extends WindController {
+class WindWebErrorController extends WindController {
 	protected $error = array();
 	protected $errorCode = 0;
 	protected $errorDir;

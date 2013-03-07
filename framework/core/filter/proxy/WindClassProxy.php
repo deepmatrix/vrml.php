@@ -18,7 +18,7 @@
  * @copyright ©2003-2103 phpwind.com
  * @license http://www.windframework.com
  * @version $Id: WindClassProxy.php 3681 2012-06-18 02:45:28Z yishuo $
- * @package base
+ * @package core.filter.proxy
  */
 class WindClassProxy {
 	/**
@@ -26,7 +26,7 @@ class WindClassProxy {
 	 * 
 	 * @var string
 	 */
-	protected $_class_interceptorChain = 'WIND:filter.WindHandlerInterceptorChain';
+	protected $_class_interceptorChain = 'WIND:core.filter.WindHandlerInterceptorChain';
 	
 	/**
 	 * 过滤链对象

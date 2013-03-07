@@ -10,7 +10,7 @@
  * @version $Id: AbstractWindApplication.php 3859 2012-12-18 09:25:51Z yishuo $
  * @package base
  */
-abstract class AbstractWindApplication extends WindModule {
+abstract class AbstractWindApplication extends WindModule implements IWindApplication {
 	/**
 	 * 请求对象
 	 *
@@ -92,11 +92,11 @@ abstract class AbstractWindApplication extends WindModule {
 		try {
 			$forward = $handler->doAction($this->handlerAdapter);
 			$this->doDispatch($forward);
-		} catch (WindForwardException $e) {
+		/*} catch (WindForwardException $e) {
 			$this->doDispatch($e->getForward());
 		} catch (WindActionException $e) {
 			$this->sendErrorMessage(($e->getError() ? $e->getError() : $e->getMessage()), 
-				$e->getCode());
+				$e->getCode());*/
 		} catch (WindException $e) {
 			$this->sendErrorMessage($e->getMessage(), $e->getCode());
 		}

@@ -39,5 +39,3 @@ class WindForwardException extends WindException {
 	}
 
 }
-
-?>

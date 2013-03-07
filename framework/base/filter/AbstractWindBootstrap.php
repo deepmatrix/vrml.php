@@ -1,5 +1,5 @@
 <?php
-Wind::import('WIND:filter.WindSimpleHandlerInterceptor');
+Wind::import('WIND:base.filter.WindSimpleHandlerInterceptor');
 /**
  * Enter description here .
  * ..
@@ -8,7 +8,7 @@ Wind::import('WIND:filter.WindSimpleHandlerInterceptor');
  * @copyright ©2003-2103 phpwind.com
  * @license http://www.windframework.com
  * @version $Id$
- * @package wind
+ * @package wind.base
  */
 abstract class AbstractWindBootstrap extends WindSimpleHandlerInterceptor {
 	/**

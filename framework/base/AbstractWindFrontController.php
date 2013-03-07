@@ -218,7 +218,7 @@ abstract class AbstractWindFrontController {
 	 */
 	public function registeFilter($filter) {
 		if ($this->_chain === null) {
-			Wind::import("WIND:filter.WindHandlerInterceptorChain");
+			//Wind::import("WIND:core.filter.WindHandlerInterceptorChain");
 			$this->_chain = new WindHandlerInterceptorChain();
 		}
 		if ($filter instanceof AbstractWindBootstrap) {
@@ -237,7 +237,7 @@ abstract class AbstractWindFrontController {
 	public function _errorHandle($errno, $errstr, $errfile, $errline) {
 		if (0 === error_reporting()) return;
 		restore_error_handler();
-		/* @var $error WindError */
+		/* @var $error WindErrorHandler */
 		$error = $this->_app->getFactory()->getInstance('error', 
 			array(
 				$this->_config['web-apps'][$this->_appName]['error-dir'], 
@@ -252,7 +252,7 @@ abstract class AbstractWindFrontController {
 	 */
 	public function _exceptionHandle($exception) {
 		restore_exception_handler();
-		/* @var $error WindError */
+		/* @var $error WindErrorHandler */
 		$error = $this->_app->getFactory()->getInstance('error', 
 			array(
 				$this->_config['web-apps'][$this->_appName]['error-dir'], 

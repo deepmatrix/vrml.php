@@ -9,7 +9,7 @@
  *          03:59:17Z yishuo $
  * @package wind
  */
-class WindCommandError extends WindError {
+class WindCommandErrorHandler extends WindErrorHandler {
 	
 	/*
 	 * (non-PHPdoc) @see WindError::showErrorMessage()

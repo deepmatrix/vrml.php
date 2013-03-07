@@ -295,24 +295,30 @@ class Wind {
 	 */
 	private static function _loadBaseLib() {
 		self::$_classes = array(
-			'AbstractWindBootstrap' => 'base/AbstractWindBootstrap', 
+            //core
+			'IWindApplication' => 'core/IWindApplication',
+            'IWindFactory' => 'core/IWindFactory',
+            'IWindController' => 'core/IWindController',
+			'IWindRequest' => 'core/IWindRequest', 
+			'IWindResponse' => 'core/IWindResponse',
+            'WindException' => 'core/WindException',
+			'WindFactory' => 'core/WindFactory',
+            'WindUtility' => 'core/WindUtility',
+            'WindModule' => 'core/WindModule',
+			'WindHandlerInterceptor' => 'core/filter/WindHandlerInterceptor', 
+			'WindHandlerInterceptorChain' => 'core/filter/WindHandlerInterceptorChain', 
+            //base
+			'AbstractWindBootstrap' => 'base/filter/AbstractWindBootstrap', 
 			'AbstractWindFrontController' => 'base/AbstractWindFrontController', 
 			'AbstractWindApplication' => 'base/AbstractWindApplication', 
-			'IWindController' => 'base/IWindController', 
-			'IWindRequest' => 'base/IWindRequest', 
-			'IWindResponse' => 'base/IWindResponse', 
-			'WindActionException' => 'base/WindActionException', 
+			'WindActionException' => 'base/exception/WindActionException', 
 			'WindEnableValidateModule' => 'base/WindEnableValidateModule', 
-			'WindError' => 'base/WindError', 
+			'WindErrorHandler' => 'base/WindErrorHandler', 
 			'WindErrorMessage' => 'base/WindErrorMessage', 
-			'WindException' => 'base/WindException', 
-			'WindFactory' => 'base/WindFactory', 
-			'WindFinalException' => 'base/WindFinalException', 
-			'WindForwardException' => 'base/WindForwardException', 
-			'WindModule' => 'base/WindModule', 
+			'WindFinalException' => 'base/exception/WindFinalException', 
+			
 			'WindActionFilter' => 'filter/WindActionFilter', 
-			'WindHandlerInterceptor' => 'filter/WindHandlerInterceptor', 
-			'WindHandlerInterceptorChain' => 'filter/WindHandlerInterceptorChain', 
+			'WindForwardException' => 'web/WindForwardException', 
 			'WindLogger' => 'log/WindLogger', 
 			'WindLangResource' => 'i18n/WindLangResource', 
 			'WindConfigParser' => 'parser/WindConfigParser', 
@@ -329,7 +335,7 @@ class Wind {
 			'WindSecurity' => 'utility/WindSecurity', 
 			'WindString' => 'utility/WindString', 
 			'WindUrlHelper' => 'utility/WindUrlHelper', 
-			'WindUtility' => 'utility/WindUtility', 
+			
 			'WindValidator' => 'utility/WindValidator');
 	}
 }

@@ -16,7 +16,7 @@
  * @version $Id: WindFactory.php 3829 2012-11-19 11:13:22Z yishuo $
  * @package base
  */
-class WindFactory {
+class WindFactory implements IWindFactory {
 	protected $proxyType = 'WIND:filter.proxy.WindClassProxy';
 	protected $classDefinitions = array();
 	protected $instances = array();
