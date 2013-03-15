@@ -81,12 +81,12 @@ class WindConfigParser implements IWindConfigParser {
 	 */
 	private function createParser($type) {
 		switch ($type) {
-			case self::CONFIG_XML:
+			/*case self::CONFIG_XML:
 				Wind::import("WIND:parser.WindXmlParser");
 				return new WindXmlParser();
 			case self::CONFIG_INI:
 				Wind::import("WIND:parser.WindIniParser");
-				return new WindIniParser();
+				return new WindIniParser();*/
 			case self::CONFIG_PROPERTIES:
 				Wind::import("WIND:parser.WindPropertiesParser");
 				return new WindPropertiesParser();

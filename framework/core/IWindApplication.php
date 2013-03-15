@@ -8,7 +8,7 @@
  * @copyright ©2003-2103 phpwind.com
  * @license http://www.windframework.com
  * @version $Id: IWindApplication.php 3829 2012-11-19 11:13:22Z yishuo $
- * @package base
+ * @package core
  */
 interface IWindApplication { 
 
@@ -41,4 +41,3 @@ interface IWindApplication {
 	 */
 	public function getFactory();
 }
-?>

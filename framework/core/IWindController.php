@@ -10,11 +10,8 @@
  */
 interface IWindController {
 
-	/**
-	 * @param AbstractWindRouter $handlerAdapter        	
+	/**     	
 	 * @return WindForward
 	 */
-	public function doAction($handlerAdapter);
+	public function doAction($actionId);
 }
-
-?>
